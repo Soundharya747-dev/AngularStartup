@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 
 @Component({
   selector: 'app-first',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first.component.css']
 })
 export class FirstComponent implements OnInit {
+  Search:any;
   public books: Array<any> = [
     { title: "book1", description: "book desc 1" },
     { title: "book2", description: "book desc 2" },
@@ -18,3 +19,15 @@ export class FirstComponent implements OnInit {
   }
 
 }
+// @Pipe({name: 'Search'})
+// export class Search  implements PipeTransform {
+// transform(value:any){
+//   if(![null,undefined,""].includes(value)){
+    
+//   }
+// }
+// }
+
+
+
+

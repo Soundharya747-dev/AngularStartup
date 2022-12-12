@@ -1,6 +1,8 @@
 <h2>Responsive Table</h2>
+<input type="search" class="form-control ml-2"  style="width: 165px" [(ngModel)]="Search">
+
 <div class="table-wrapper">
-    <table class="fl-table">
+    <table class="content">
         <thead>
         <tr>
           <th>#</th>
@@ -9,7 +11,7 @@
         </tr>
         </thead>
         <tbody>       
-        <tr *ngFor="let item of books,index as i">
+        <tr *ngFor="let item of books|Search,index as i">
           <td>{{i+1}}</td>
           <td>{{item.title}}</td>
           <td>{{item.description}}</td>
