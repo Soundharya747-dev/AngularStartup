@@ -11,7 +11,7 @@
         </tr>
         </thead>
         <tbody>       
-        <tr *ngFor="let item of books|Search,index as i">
+        <tr *ngFor="let item of books|Search:Search,index as i">
           <td>{{i+1}}</td>
           <td>{{item.title}}</td>
           <td>{{item.description}}</td>

@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent, splice } from './app.component';
 import { HelloComponent } from './hello.component';
-import { FirstComponent } from '../first/first.component';
+import { FirstComponent, Search } from '../first/first.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
      BrowserModule, 
      FormsModule
     ],
-  declarations: [ AppComponent,splice,FirstComponent, HelloComponent ],
+  declarations: [ AppComponent,splice,FirstComponent,Search, HelloComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
