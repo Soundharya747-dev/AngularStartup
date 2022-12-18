@@ -1,21 +1,29 @@
 <h2>Responsive Table</h2>
-<b>Search:</b><input type="search" class="form-control ml-2"  style="width: 165px" [(ngModel)]="Search">
+<b>Search:</b
+><input
+  type="search"
+  class="form-control ml-2"
+  style="width: 165px"
+  [(ngModel)]="Search"
+/>
 
 <div class="table-wrapper">
-    <table class="content">
-        <thead>
-        <tr>
-          <th>#</th>
-          <th>Title</th>
-          <th>Description</th>            
-        </tr>
-        </thead>
-        <tbody>       
-        <tr *ngFor="let item of books|Search:Search,index as i">
-          <td>{{i+1}}</td>
-          <td>{{item.title}}</td>
-          <td>{{item.description}}</td>
-        </tr>       
-        <tbody>
-    </table>
+  <table class="content">
+    <thead>
+      <tr>
+        <th># <b (click)="Sort()">V</b></th>
+        <th>Title <b (click)="Sort()">V</b></th>
+        <th>Description <b (click)="Sort()"> V</b></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of books | Search: Search; index as i">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.description }}</td>
+      </tr>
+    </tbody>
+
+    <tbody></tbody>
+  </table>
 </div>

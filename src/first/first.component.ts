@@ -18,15 +18,14 @@ export class FirstComponent implements OnInit {
   ngOnInit() {
   }
 
-  Sort(value){
-    console.log(value)
+  Sort(){
+   
     var list=this.books;
-    if(value=='A'){
       this.books=list.sort((arr,brr)=>{
-       return (brr.Sno<brr.Sno)? brr.Sno-arr.Sno:
+       return (brr.Sno<arr.Sno)? brr.Sno-arr.Sno:
           arr.Sno-brr.Sno;});
-      console.log(this.books,value)
-    }
+      
+    
   }
 
 }
