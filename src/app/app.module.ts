@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppComponent, splice } from './app.component';
@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   imports:  [
     BrowserAnimationsModule, 
+    FontAwesomeModule,
        HttpClientModule,   
      BrowserModule, 
      FormsModule
